@@ -1,0 +1,96 @@
+# depslib dependency file v1.0
+1749603563 source:c:\users\gring\onedrive\escritorio\enfrendados\enfrendados\main.cpp
+	<iostream>
+	"dados.h"
+	"rlutil.h"
+	<ctime>
+
+1749502977 c:\users\gring\onedrive\escritorio\enfrendados\enfrendados\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1749602401 source:c:\users\gring\onedrive\escritorio\enfrendados\enfrendados\dados.cpp
+	<cstdlib>
+	"dados.h"
+	<iostream>
+
+1749602251 c:\users\gring\onedrive\escritorio\enfrendados\enfrendados\dados.h
+
+1749520554 source:c:\users\gring\onedrive\escritorio\enfrendados\enfrendados\un_menu.cpp
+	<iostream>
+	"rlutil.h"
+
+1749598959 source:c:\users\gring\onedrive\escritorio\enfrendados\enfrendados\arrojadas.cpp
+	<iostream>
+	<ctime>
+	"dados.h"
+	"rlutil.h"
+
+1749674885 source:c:\users\usuario\desktop\enfrendados\main.cpp
+	<iostream>
+	"dados.h"
+	"rlutil.h"
+	<ctime>
+
+1749667077 c:\users\usuario\desktop\enfrendados\dados.h
+	<iostream>
+	<string>
+
+1749502976 c:\users\usuario\desktop\enfrendados\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1749666754 source:c:\users\usuario\desktop\enfrendados\dados.cpp
+	<cstdlib>
+	"dados.h"
+	<iostream>
+
+1749688609 source:c:\users\jorge\desktop\enfrendados\main.cpp
+	<iostream>
+	"dados.h"
+	"rlutil.h"
+	<ctime>
+
+1749667077 c:\users\jorge\desktop\enfrendados\dados.h
+	<iostream>
+	<string>
+
+1749502976 c:\users\jorge\desktop\enfrendados\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1749666754 source:c:\users\jorge\desktop\enfrendados\dados.cpp
+	<cstdlib>
+	"dados.h"
+	<iostream>
+
