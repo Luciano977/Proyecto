@@ -1,0 +1,10 @@
+FALTA: 
+1. asignar puntos a player 1 obtenidos.
+2. asignar dados quitados(a player 1)/agregados(a player2).
+3) Observar que si ' cantidadDadosInicioP1=0; '
+ que el juego finaliza con 10.000pts.
+4. Que juegue el player 2.
+5. asignar puntos a player 2 obtenidos.
+6.asignar dados quitados (a player 2)/agregados(a player1).
+7. Observar que si ' cantidadDadosInicioP2=0; '
+que el juego finaliza con 10.000pts.
