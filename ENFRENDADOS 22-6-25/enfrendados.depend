@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1750442685 source:c:\users\luciano\documents\tecnicatura en programación\primer año\programacion i\trabajo practico integrador\17062025\dados.cpp
+	<cstdlib>
+	"dados.h"
+	"rlutil.h"
+	<iostream>
+	<algorithm>
+
+1750442926 c:\users\luciano\documents\tecnicatura en programación\primer año\programacion i\trabajo practico integrador\17062025\dados.h
+	<iostream>
+	<string>
+
+1750443139 source:c:\users\luciano\documents\tecnicatura en programación\primer año\programacion i\trabajo practico integrador\17062025\main.cpp
+	<iostream>
+	"dados.h"
+	"rlutil.h"
+	<ctime>
+
+1749767447 c:\users\luciano\documents\tecnicatura en programación\primer año\programacion i\trabajo practico integrador\17062025\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1750634852 source:c:\users\gring\onedrive\escritorio\20062025\dados.cpp
+	<cstdlib>
+	"dados.h"
+	"rlutil.h"
+	<iostream>
+	<algorithm>
+
+1750470852 c:\users\gring\onedrive\escritorio\20062025\dados.h
+	<iostream>
+	<string>
+
+1750470852 c:\users\gring\onedrive\escritorio\20062025\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1750634643 source:c:\users\gring\onedrive\escritorio\20062025\main.cpp
+	<iostream>
+	"dados.h"
+	"rlutil.h"
+	<ctime>
+
