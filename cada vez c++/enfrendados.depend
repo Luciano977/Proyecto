@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1750879385 source:c:\users\facun\onedrive\escritorio\luciano 25-06-2025\dados.cpp
+	<cstdlib>
+	"dados.h"
+	"rlutil.h"
+	<iostream>
+
+1750876787 c:\users\facun\onedrive\escritorio\luciano 25-06-2025\dados.h
+	<iostream>
+	<string>
+
+1750839116 c:\users\facun\onedrive\escritorio\luciano 25-06-2025\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1750876792 source:c:\users\facun\onedrive\escritorio\luciano 25-06-2025\main.cpp
+	<iostream>
+	"dados.h"
+	"rlutil.h"
+	<ctime>
+
+1750876792 source:c:\users\facun\onedrive\escritorio\estadisticas 25-06-2025\main.cpp
+	<iostream>
+	"dados.h"
+	"rlutil.h"
+	<ctime>
+
+1750876787 c:\users\facun\onedrive\escritorio\estadisticas 25-06-2025\dados.h
+	<iostream>
+	<string>
+
+1750839116 c:\users\facun\onedrive\escritorio\estadisticas 25-06-2025\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1750880739 source:c:\users\facun\onedrive\escritorio\estadisticas 25-06-2025\dados.cpp
+	<cstdlib>
+	"dados.h"
+	"rlutil.h"
+	<iostream>
+
