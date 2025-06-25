@@ -1,179 +1,67 @@
 #include <iostream>
-
+#include "dados.h"
 #include "rlutil.h"
+#include <ctime>
+
 using namespace std;
 
-///Declaracion de funciones
-
-string obtenerNombre();
-int tirarDadosSeisCaras();
-int tirarDadosDoceCaras();
-void tiradaDados12 (int vec[], int cant);
-void tiradaDados6 (int vec[], int cant);
-void mostrarCreditos();
-
-int main()
-{
+int main(){
+    srand(time(0));
     int opcion, opcionTiradas;
+    int maximoPuntaje=0;
+    string mejorJugador;
     string jugadorUno, jugadorDos;
-    int tiradaUno =0, tiradaDos =0;
     string nombre;
-    rlutil::setBackgroundColor(rlutil::BLUE);
-    rlutil::setColor(rlutil::WHITE);
+    rlutil::setBackgroundColor(rlutil::LIGHTBLUE);
+    rlutil::setColor(rlutil::BLACK);
 
     do{
-
-        system ("cls"); ///limpia la pantalla para la nueva opcion
+        rlutil::cls(); ///limpia la pantalla para la nueva opcion
         rlutil::locate(5,5);
-        cout << "BIENVENIDOS AL JUEGO ENFRENTADOS"<< endl;
-        cout << "--------------------------------"<< endl;
-        cout << endl<< endl;
-        cout << "1 - JUGAR" << endl<< endl;
-        cout << "2 - ESTADISTICAS " << endl<< endl;
-        cout << "3 - CREDITOS" << endl<< endl;
-        cout << "-----------------" << endl<< endl;
-        cout << "0 - SALIDA"<< endl<< endl;
-        cout <<" Elija una opcion: ";
-        cin >> opcion;
+        ///https://www.patorjk.com/software/taag/#p=display&h=2&v=2&f=Big&t=ENFRENDADOS (por si lo quieren ver)
+        cout <<"-------------------------------------------------------------------------------------\n";
+        cout <<"       |  ____| \\ | |  ____|  __ \\|  ____| \\ | |  __ \\   /\\   |  __ \\ / __ \\ / ____|\n";
+        cout <<"       | |__  |  \\| | |__  | |__) | |__  |  \\| | |  | | /  \\  | |  | | |  | | (___  \n";
+        cout <<"       |  __| | . ` |  __| |  _  /|  __| | . ` | |  | |/ /\\ \\ | |  | | |  | |\\___ \\ \n";
+        cout <<"       | |____| |\\  | |    | | \\ \\| |____| |\\  | |__| / /__\\ \\| |__| | |__| |____) |\n";
+        cout <<"       |______|_| \\_|_|    |_|  \\_\\______|_| \\_|_____/_/    \\_\\_____/ \\____/|_____/\n";
+        cout <<"    -------------------------------------------------------------------------------------\n";
+
+        /// Muestra menu
+        mostrarMenu();
+        ///llamamos a validacion de ingreso
+        opcion=leerOpcionMenu();
 
         switch (opcion){
         case 1:
             cout <<"VAMOS A JUGAR" << endl;
-            system ("cls");
-            ///Pido el nombre al primer jugador
-            jugadorUno = obtenerNombre();
-            cout << endl;
-            ///Pido el nombre al segundo jugador
-            jugadorDos = obtenerNombre();
-            cout <<endl;
-            cout << "Arrojemos los dados para saber quien comienza el juego"<< endl;
-            cout << "------------------------------------------------------"<< endl<< endl; ///Se arrojan los dados para saber quien comienza el juego
-
-            tiradaUno = tirarDadosSeisCaras();///Arroja los dados el primero jugador
-            cout <<"El jugador "<<jugadorUno<<" arrojo el: "<<tiradaUno<< endl;
-            system ("pause");
-            tiradaDos = tirarDadosSeisCaras();///Arroja los dados el segundo jugador
-            cout <<"El jugador "<<jugadorDos<<" arrojo el: "<<tiradaDos<< endl;
-
+            rlutil::cls();
+            ///Esta funcion realiza el juego, y nos trae el maximo puntaje y el mejor jugador para la estadistica.
+            jugarPartida (jugadorUno, jugadorDos, maximoPuntaje, mejorJugador);
             break;
-
-
         case 2:
             cout <<"ESTADISTICAS" << endl;
+            if(maximoPuntaje==0){
+                cout<<"Todavia no existe un maximo puntaje."<<endl;
+            }else{
+                cout <<" Mejor puntaje: "<< maximoPuntaje<< " del jugador "<< mejorJugador;
+            }
+            rlutil::anykey();
             break;
         case 3:
             cout <<"CREDITOS" << endl;
             mostrarCreditos();
             break;
         case 0:
-            cout <<"Gracias por utilizar mi aplicacion :)"<< endl;
+            cout <<"Gracias por utilizar nuestra aplicacion :)"<< endl;
             break;
-
         default:
-            cout <<endl<<"Opcion no valida .... :("<< endl;
+            cout <<endl<<"Opcion no valida .... :( "<< endl;
             rlutil::anykey();
-
-
-            }
-        ///system ("pause"); /// hace una pausa antes de borrar
-
+        }
     }while (opcion !=0);
-
-
-
-
     return 0;
-
-}
-string obtenerNombre(){
-    string jugador;
-
-    cout <<"Ingresa tu nombre : ";
-    cin >> jugador;
-    return jugador;
-
-}
-/*
-if (tiradaUno == tiradaDos){
-                opcionTiradas = 10;
-            }
-            else if (tiradaUno > tiradaDos){
-                opcionTiradas = 20;
-            }
-                else {
-                    opcionTiradas = 30;
-                }
-            switch (opcionTiradas){
-            case 10:
-                cout <<"Ambos obtuvieron los mismos puntos, volvamos a tirar" << endl;
-                break;
-            case 20:
-                cout <<"Comienza tirando el jugador 1, vamos a jugar!!!"<< endl;
-                break;
-            case 30:
-                cout <<"Comienza tirando el jugador 2, vamos a jugar!!!"<< endl;
-                break;
-            }
-
-/*
-void tiradaDados12(tiradaDoce, 2){
-
-    int puntosObtenidosDoce = calcularPuntos(tiradaDoce, 2);
-
-    for(int i=0; i<2 ; i++){
-        cout << endl;
-        cout << "El "<<i+1<<" dado arrojo el numero: "<<tiradaDoce[i]<< endl;
-        sumaDoce+= tiradaDoce[i];
-    }
-    cout <<" Los puntos obtenidos son: "<< sumaDoce<< endl; ///puntosObtenidosDoce
-    cout <<" ----------------------------"<< endl;
 }
 
-void tiradaDados6(tiradaSeis, 6){
-
-    int puntosObtenidosSeis = calcularPuntos(tiradaSeis, 6);
 
 
-    for (int i=0; i<6; i++){
-        cout << endl;
-        cout <<"El "<<i+1<<" dado arrojo el numero: "<< tiradaSeis[i]<< endl;
-        sumaSeis+= tiradaSeis[i];
-
-    }
-    cout <<" Los puntos obtenidos son: "<< sumaSeis<< endl;; ///puntosObtenidosSeis
-    cout <<" ----------------------------"<< endl;
-}
-*/
-int tirarDadosSeisCaras(){
-    return rand() %6 + 1;
-
-}
-int tirarDadosDoceCaras(){
-    return rand() % 12 + 1;
-}
-
-void tiradaDados12 (int vecDoce[], int cant){
-    for(int i=0; i<cant; i++){
-        vecDoce[i]=tirarDadosDoceCaras();
-    }
-}
-void tiradaDados6 (int vecSeis[], int cant){
-    for(int i=0; i<cant; i++){
-        vecSeis[i]=tirarDadosSeisCaras();
-    }
-}
-
-void mostrarCreditos(){
-    system("cls");
-    cout<< endl;
-    cout<<" Este Juego fue desarrollado por los alumnos"<< endl;
-    cout<<" de la UTN FACULTAD REGIONAL GENERAL PACHECO "<< endl;
-    cout<<" -------------------------------------------"<< endl;
-    cout<< "Facundo Sosa - Legajo Nro."<< endl;
-    cout<< "Jorge -  Legajo Nro."<< endl;
-    cout<< "Luciano Cejas - Legajo Nro."<< endl;
-    cout<< "Nicolas - Legajo Nro."<< endl;
-    cout<< endl;
-    cout<< "Agradecemos tu colaboracion"<< endl<< endl;
-
-}

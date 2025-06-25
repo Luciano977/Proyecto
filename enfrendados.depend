@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1750844060 source:c:\users\facun\onedrive\escritorio\25-06\dados.cpp
+	<cstdlib>
+	"dados.h"
+	"rlutil.h"
+	<iostream>
+
+1750843713 c:\users\facun\onedrive\escritorio\25-06\dados.h
+	<iostream>
+	<string>
+
+1750839116 c:\users\facun\onedrive\escritorio\25-06\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1750844018 source:c:\users\facun\onedrive\escritorio\25-06\main.cpp
+	<iostream>
+	"dados.h"
+	"rlutil.h"
+	<ctime>
+
